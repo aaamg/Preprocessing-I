@@ -96,7 +96,9 @@ p, a {
 	justify-content: space-around;
 	height: 30px;
 	width: 35%;
-	margin: 30px 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 60%;
 	border: 2px solid green;
 
 	a{
@@ -108,7 +110,8 @@ p, a {
 
 
 .topMain{
-	width: 800px;
+	width: 90%;
+	margin: 20px 5%;
 	height: 570px;
 	display: flex;
 	flex-direction: column;
@@ -158,8 +161,9 @@ p, a {
 //midMain below
 
 .midMain{
-	width: 800px;
-	height: 500px;
+	width: 90%;
+	height: 300px;
+	margin: 20px 5%;
 	display: flex;
 	flex-direction: row;
 	border: 2px solid pink;
@@ -172,10 +176,13 @@ p, a {
 
 		h2{
 			display: flex;
+			margin: 10px 0;
+			margin-right: 20px;
 			.border();
 		}
 		p{
 			display: flex;
+			margin-right: 20px;
 			.border();
 		}
 	}//end sec1
@@ -187,18 +194,29 @@ p, a {
 
 		h2{
 			display: flex;
+			margin: 10px 0px;
 			.border();
 		}
 		p{
 			display: flex;
 			.border();
+
+		}
+		p .par1{
+			display: flex;
+			.border();
+			background-color: lightgray;
+			color: cyan;
+			//wont work?
 		}
 	}//end sec2
 }//end midMain
 
+
 .botMain{
-	width: 800px;
+	width: 90%;
 	height: 200px;
+	margin: 20px 5%;
 	display: flex;
 	flex-direction: column;
 	border: 2px solid blue;
@@ -214,8 +232,9 @@ p, a {
 }//end botMain
 
 footer{
-	width: 100%;
+	width: 90%;
 	height: 80px;
+	margin: 20px 5%;
 	display: flex;
 	flex-direction: column;
 	background-color: grey;
@@ -227,6 +246,7 @@ footer{
 		justify-content: center;
 		color: white;
 		font-size: 2rem;
+		height: 100%;
 		.border();
 	}
 }//end footer
