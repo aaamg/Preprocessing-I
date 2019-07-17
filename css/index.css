@@ -177,7 +177,7 @@ a {
   height: 570px;
   display: flex;
   flex-direction: column;
-  background-color: lightgrey;
+  background-color: #8380a3;
   border: 2px solid red;
 }
 .topMain img {
@@ -262,10 +262,19 @@ a {
   background-color: lightgray;
   color: cyan;
 }
+.boxTitle {
+  display: flex;
+  width: 90%;
+  height: 30px;
+  margin: 20px 5%;
+  margin-bottom: 2px;
+  border: 2px solid red;
+}
 .botMain {
   width: 90%;
-  height: 300px;
+  height: 150px;
   margin: 20px 5%;
+  margin-top: 2px;
   display: flex;
   flex-direction: row;
   border: 2px solid blue;
@@ -295,6 +304,8 @@ a {
   width: 100%;
 }
 .botMain p {
+  padding: 10px 0px;
+  padding-left: 4px;
   border: 2px solid red;
 }
 footer {
