@@ -327,15 +327,12 @@ footer div {
   height: 100%;
   border: 2px solid red;
 }
-/*
-@media screen and (max-width: 500px){
-
-	.contain {
-        width: 500px;
-		margin: 0 auto;
-	}
-	.topMain{
-        background-color: black;
-    }
-}//end media
-*/
+@media screen and (max-width: 500px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .topMain {
+    background-color: #f7b5b5;
+  }
+}
