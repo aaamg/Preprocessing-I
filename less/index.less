@@ -54,6 +54,86 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 10px;
 }
 
+.container{
+	width: 900px;
+	margin: 0 auto;
+	.border();
+}
+h1 {
+	font-size: 4rem;
+}
+
+p, h2, h3, h4, h5 {
+	//font-family: @header-font;
+	font-size: 2rem;
+}
+
+//Mixins
+.border(){
+	border: 2px solid red;
+}
+
+//below we code
+
+.navBar{
+	display: flex;
+	justify-content: space-around;
+	height: 30px;
+	margin-top: 30px;
+	border: 2px solid green;
+
+	a{
+		text-decoration: none;
+		color: silver;
+		font-size: 1.8rem;
+	}
+}// End navBar and Header
+
+
+.topMain{
+	width: 700px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	.border();
+
+	img{
+		display: flex;
+		justify-content: center;
+		width: 52%;
+		height: 0 auto;
+		//margin and padding
+		margin: 20px 0px;
+	}
+	h1{
+		display: flex;
+		justify-content: center;
+		border: 2px solid cyan;
+		//margin and padding
+		margin: 20px 0px;
+	}
+	p{
+		display: flex;
+		.border();
+		//margin and padding
+		margin: 20px 0px;
+	}
+	button{
+		display: flex;
+		width: 20%;
+		height: 10%;
+		justify-content: center;
+		/*button styling*/
+		font-size: 1.5rem;
+		background-color: white;
+		border: 2px solid cyan;
+		//margin and padding
+		margin: 20px 0px;
+
+		
+	}
+}//End topMain
