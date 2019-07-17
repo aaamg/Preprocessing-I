@@ -53,6 +53,14 @@ table {
     box-sizing: border-box;
 }
 
+//Mixins
+.border(){
+	border: 2px solid red;
+}
+
+@font: 'Work Sans', sans-serif;
+@headFont:'Anton', sans-serif;
+
 html, body {
 	height: 100%;
 	font-size: 10px;
@@ -63,32 +71,37 @@ html, body {
 	margin: 0 auto;
 	.border();
 }
-h1 {
+
+//fonts below
+h1{
 	font-size: 4rem;
+	font-family: @headFont;
 }
 
-p, h2, h3, h4, h5 {
-	//font-family: @header-font;
+h2, h3, h4, h5 {
+	font-size: 2.5rem;
+	font-family: @headFont;
+}
+
+
+p, a {
+	font-family: @font;
 	font-size: 2rem;
 }
 
-//Mixins
-.border(){
-	border: 2px solid red;
-}
-
-//below we code
+//below we code --------------------------------------------
 
 .navBar{
 	display: flex;
 	justify-content: space-around;
 	height: 30px;
+	width: 35%;
 	margin: 30px 0px;
 	border: 2px solid green;
 
 	a{
 		text-decoration: none;
-		color: silver;
+		color: black;
 		font-size: 1.8rem;
 	}
 }// End navBar and Header
@@ -96,7 +109,7 @@ p, h2, h3, h4, h5 {
 
 .topMain{
 	width: 800px;
-	height: 500px;
+	height: 570px;
 	display: flex;
 	flex-direction: column;
 	background-color: lightgrey;
@@ -108,25 +121,27 @@ p, h2, h3, h4, h5 {
 		width: 52%;
 		height: 0 auto;
 		//margin and padding
-		margin: 20px 0px;
+		margin: 20px 5%;
+		.border();
 	}
 	h1{
 		display: flex;
 		justify-content: center;
 		border: 2px solid cyan;
 		//margin and padding
-		margin: 20px 0px;
+		margin: 20px 5%;
 	}
 	p{
 		display: flex;
+		width: 90%;
 		.border();
 		//margin and padding
-		margin: 20px 0px;
+		margin: 20px 5%;
 	}
 	button{
 		display: flex;
 		width: 20%;
-		height: 10%;
+		height: 8%;
 		justify-content: center;
 		/*button styling*/
 		font-size: 1.5rem;
@@ -134,7 +149,7 @@ p, h2, h3, h4, h5 {
 		color: white;
 		border: 2px solid cyan;
 		//margin and padding
-		margin: 20px 0px;
+		margin: 20px 5%;
 
 		
 	}
