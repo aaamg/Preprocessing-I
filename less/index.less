@@ -74,7 +74,7 @@ html, body {
 
 //fonts below
 h1{
-	font-size: 4rem;
+	font-size: 5rem;
 	font-family: @headFont;
 }
 
@@ -129,7 +129,7 @@ p, a {
 	}
 	h1{
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 		border: 2px solid cyan;
 		//margin and padding
 		margin: 20px 5%;
@@ -147,10 +147,13 @@ p, a {
 		height: 8%;
 		justify-content: center;
 		/*button styling*/
-		font-size: 1.5rem;
-		background-color: grey;
-		color: white;
+		font-family: @font;
+		font-size: 2rem;
+		border-radius: 8px;
+		background-color: white;
+		color: purple;
 		border: 2px solid cyan;
+		box-shadow: 5px 10px 18px #888888;
 		//margin and padding
 		margin: 20px 5%;
 
@@ -199,7 +202,8 @@ p, a {
 		}
 		p{
 			display: flex;
-			.border();
+			padding: 7px 0px;
+			border: 1px solid lightgray;
 
 		}
 		p .par1{
@@ -212,25 +216,53 @@ p, a {
 	}//end sec2
 }//end midMain
 
+//h2{
+		//display: flex;
+		//.border();
+	//}
+
 
 .botMain{
 	width: 90%;
-	height: 200px;
+	height: 300px;
 	margin: 20px 5%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	border: 2px solid blue;
 
-	h2{
+	.years{
 		display: flex;
-		.border();
+		flex-direction: column;
+		width: 33.33%;
+		p{
+			width: 100%;
+			
+		}
+	}
+	.company{
+		display: flex;
+		flex-direction: column;
+		width: 33.33%;
+		p{
+			width: 100%;
+		}
+	}
+	.title{
+		display: flex;
+		flex-direction: column;
+		width: 33.33%;
+		p{
+			width: 100%;
+		}
 	}
 	p{
-		display: flex;
+		
 		.border();
 	}
 }//end botMain
 
+
+//done below
 footer{
 	width: 90%;
 	height: 80px;
@@ -245,7 +277,8 @@ footer{
 		align-items: center;
 		justify-content: center;
 		color: white;
-		font-size: 2rem;
+		font-family: @font;
+		font-size: 1.7rem;
 		height: 100%;
 		.border();
 	}
