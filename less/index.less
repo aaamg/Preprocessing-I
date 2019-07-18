@@ -53,7 +53,307 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+//Mixins
+.border(){
+	border: 2px solid red;
 }
+
+@font: 'Work Sans', sans-serif;
+@headFont:'Anton', sans-serif;
+@mobile: ~"(max-width: 500px)";
+
+//@media @mobile
+
+html, body {
+	height: 100%;
+	font-size: 10px;
+}
+
+.container{
+	width: 900px;
+	margin: 0 auto;
+	//.border();
+}
+
+//fonts below
+h1{
+	font-size: 5rem;
+	font-family: @headFont;
+}
+
+h2, h3, h4, h5 {
+	font-size: 2.5rem;
+	font-family: @headFont;
+}
+
+
+p, a {
+	font-family: @font;
+	font-size: 2rem;
+}
+
+//below is the structure -----------------------------------
+
+.navBar{
+	display: flex;
+	justify-content: space-around;
+	height: 30px;
+	width: 35%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 60%;
+	//border: 2px solid green;
+
+	a{
+		text-decoration: none;
+		color: black;
+		font-size: 1.8rem;
+	}
+	//mobile
+	@media @mobile{
+		margin: 30px 0px;
+		width: 100%;
+				
+				
+	}
+}// End navBar and Header
+
+
+.topMain{
+	width: 90%;
+	margin: 20px 5%;
+	height: 570px;
+	display: flex;
+	flex-direction: column;
+	background-color: #8380a3;
+	//.border();
+
+	//mobile
+	@media @mobile{
+		height: 450px;
+	}
+
+	img{
+		display: flex;
+		justify-content: center;
+		width: 52%;
+		height: 0 auto;
+		//margin and padding
+		margin: 20px 5%;
+		//.border();
+	}
+	h1{
+		display: flex;
+		justify-content: flex-start;
+		//border: 2px solid cyan;
+		//margin and padding
+		margin: 20px 5%;
+
+		//mobile
+		@media @mobile{
+			font-size: 3.5rem;
+		}
+	}
+	p{
+		display: flex;
+		width: 90%;
+		//.border();
+		//margin and padding
+		margin: 20px 5%;
+	}
+	button{
+		display: flex;
+		width: 20%;
+		height: 8%;
+		justify-content: center;
+		/*button styling*/
+		font-family: @font;
+		font-size: 2rem;
+		border-radius: 8px;
+		background-color: white;
+		color: purple;
+		border: 2px solid cyan;
+		box-shadow: 5px 10px 18px #000000;
+		//margin and padding
+		margin: 20px 5%;
+
+		//mobile
+		@media @mobile{
+			height: 10%;
+			width: 40%;
+			
+		}
+	}
+}//End topMain
+
+//midMain below
+
+.midMain{
+	width: 90%;
+	height: 245px;
+	margin: 20px 5%;
+	display: flex;
+	flex-direction: row;
+	//border: 2px solid pink;
+
+	.sec1{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		//border: 2px solid green;
+
+		h2{
+			display: flex;
+			margin: 10px 0;
+			margin-right: 20px;
+			//.border();
+		}
+		p{
+			display: flex;
+			margin-right: 20px;
+			//.border();
+		}
+	}//end sec1
+	.sec2{
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		//border: 2px solid green;
+
+		h2{
+			display: flex;
+			margin: 10px 0px;
+			//.border();
+		}
+		p{
+			display: flex;
+			padding: 7px 0px;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
+		}
+		p .par1{
+			display: flex;
+			//.border();
+			background-color: lightgray;
+			color: cyan;
+			//wont work?
+		}
+	}//end sec2
+
+	//mobile
+	@media @mobile{
+		height: 380px;
+	}//end mobile
+
+}//end midMain
+
+.boxTitle {
+	display: flex;
+	width: 90%;
+	height: 30px;
+	margin: 20px 5%;
+	margin-bottom: 2px;
+	//.border();
+}//End box title
+
+
+.botMain{
+	width: 90%;
+	height: 150px;
+	margin: 20px 5%;
+	margin-top: 2px;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid lightgray;
+
+	.years{
+		display: flex;
+		flex-direction: column;
+		width: 33.33%;
+
+		p{
+			width: 100%;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
+	}
+	.company{
+		display: flex;
+		flex-direction: column;
+		width: 33.33%;
+		p{
+			width: 100%;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
+	}
+	.title{
+		display: flex;
+		flex-direction: column;
+		width: 33.33%;
+		p{
+			width: 100%;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
+	}
+	p{
+		padding: 10px 0px;	
+		padding-left: 4px;
+		//.border();
+	}
+
+	//mobile
+	@media @mobile{
+		height: 200px;
+	}//end mobile
+}//end botMain
+
+
+//done below
+footer{
+	width: 90%;
+	height: 80px;
+	margin: 20px 5%;
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+	//border: 2px solid yellow;
+
+	div{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		font-family: @font;
+		font-size: 1.7rem;
+		height: 100%;
+		//.border();
+	}
+}//end footer
+
+@media screen and (max-width: 500px){
+
+	.container{
+		width: 500px;
+		margin: 0 auto;
+	}
+	
+}//end media
 
