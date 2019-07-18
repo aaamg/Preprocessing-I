@@ -60,6 +60,9 @@ table {
 
 @font: 'Work Sans', sans-serif;
 @headFont:'Anton', sans-serif;
+@mobile: ~"(max-width: 500px)";
+
+//@media @mobile
 
 html, body {
 	height: 100%;
@@ -89,7 +92,7 @@ p, a {
 	font-size: 2rem;
 }
 
-//below we code --------------------------------------------
+//below is the structure -----------------------------------
 
 .navBar{
 	display: flex;
@@ -106,6 +109,13 @@ p, a {
 		color: black;
 		font-size: 1.8rem;
 	}
+	//mobile
+	@media @mobile{
+		margin: 30px 0px;
+		width: 100%;
+				
+				
+	}
 }// End navBar and Header
 
 
@@ -117,6 +127,11 @@ p, a {
 	flex-direction: column;
 	background-color: #8380a3;
 	.border();
+
+	//mobile
+	@media @mobile{
+		height: 450px;
+	}
 
 	img{
 		display: flex;
@@ -133,6 +148,11 @@ p, a {
 		border: 2px solid cyan;
 		//margin and padding
 		margin: 20px 5%;
+
+		//mobile
+		@media @mobile{
+			font-size: 3.5rem;
+		}
 	}
 	p{
 		display: flex;
@@ -157,7 +177,12 @@ p, a {
 		//margin and padding
 		margin: 20px 5%;
 
-		
+		//mobile
+		@media @mobile{
+			height: 10%;
+			width: 40%;
+			
+		}
 	}
 }//End topMain
 
@@ -214,6 +239,12 @@ p, a {
 			//wont work?
 		}
 	}//end sec2
+
+	//mobile
+	@media @mobile{
+		height: 380px;
+	}//end mobile
+
 }//end midMain
 
 .boxTitle {
@@ -242,7 +273,11 @@ p, a {
 		p{
 			width: 100%;
 			
-		}
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
 	}
 	.company{
 		display: flex;
@@ -250,7 +285,11 @@ p, a {
 		width: 33.33%;
 		p{
 			width: 100%;
-		}
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
 	}
 	.title{
 		display: flex;
@@ -258,13 +297,22 @@ p, a {
 		width: 33.33%;
 		p{
 			width: 100%;
-		}
+			@media @mobile{
+				height: 33.33%;
+				font-size: 1.8rem;
+			}//end mobile
+		}//end p
 	}
 	p{
 		padding: 10px 0px;	
 		padding-left: 4px;
 		.border();
 	}
+
+	//mobile
+	@media @mobile{
+		height: 200px;
+	}//end mobile
 }//end botMain
 
 
@@ -296,8 +344,6 @@ footer{
 		width: 500px;
 		margin: 0 auto;
 	}
-	.topMain{
-        background-color: rgb(247, 181, 181);
-    }
+	
 }//end media
 
