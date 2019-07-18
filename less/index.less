@@ -72,7 +72,7 @@ html, body {
 .container{
 	width: 900px;
 	margin: 0 auto;
-	.border();
+	//.border();
 }
 
 //fonts below
@@ -102,7 +102,7 @@ p, a {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	margin-left: 60%;
-	border: 2px solid green;
+	//border: 2px solid green;
 
 	a{
 		text-decoration: none;
@@ -126,7 +126,7 @@ p, a {
 	display: flex;
 	flex-direction: column;
 	background-color: #8380a3;
-	.border();
+	//.border();
 
 	//mobile
 	@media @mobile{
@@ -140,12 +140,12 @@ p, a {
 		height: 0 auto;
 		//margin and padding
 		margin: 20px 5%;
-		.border();
+		//.border();
 	}
 	h1{
 		display: flex;
 		justify-content: flex-start;
-		border: 2px solid cyan;
+		//border: 2px solid cyan;
 		//margin and padding
 		margin: 20px 5%;
 
@@ -157,7 +157,7 @@ p, a {
 	p{
 		display: flex;
 		width: 90%;
-		.border();
+		//.border();
 		//margin and padding
 		margin: 20px 5%;
 	}
@@ -194,46 +194,47 @@ p, a {
 	margin: 20px 5%;
 	display: flex;
 	flex-direction: row;
-	border: 2px solid pink;
+	//border: 2px solid pink;
 
 	.sec1{
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		border: 2px solid green;
+		//border: 2px solid green;
 
 		h2{
 			display: flex;
 			margin: 10px 0;
 			margin-right: 20px;
-			.border();
+			//.border();
 		}
 		p{
 			display: flex;
 			margin-right: 20px;
-			.border();
+			//.border();
 		}
 	}//end sec1
 	.sec2{
 		display: flex;
 		flex-direction: column;
 		width: 50%;
-		border: 2px solid green;
+		//border: 2px solid green;
 
 		h2{
 			display: flex;
 			margin: 10px 0px;
-			.border();
+			//.border();
 		}
 		p{
 			display: flex;
 			padding: 7px 0px;
-			border: 1px solid lightgray;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
 
 		}
 		p .par1{
 			display: flex;
-			.border();
+			//.border();
 			background-color: lightgray;
 			color: cyan;
 			//wont work?
@@ -253,7 +254,7 @@ p, a {
 	height: 30px;
 	margin: 20px 5%;
 	margin-bottom: 2px;
-	.border();
+	//.border();
 }//End box title
 
 
@@ -264,15 +265,18 @@ p, a {
 	margin-top: 2px;
 	display: flex;
 	flex-direction: row;
-	border: 2px solid blue;
+	border-top: 1px solid lightgray;
 
 	.years{
 		display: flex;
 		flex-direction: column;
 		width: 33.33%;
+
 		p{
 			width: 100%;
-			
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
 			@media @mobile{
 				height: 33.33%;
 				font-size: 1.8rem;
@@ -285,6 +289,9 @@ p, a {
 		width: 33.33%;
 		p{
 			width: 100%;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
 			@media @mobile{
 				height: 33.33%;
 				font-size: 1.8rem;
@@ -297,6 +304,9 @@ p, a {
 		width: 33.33%;
 		p{
 			width: 100%;
+			border-top: 1px solid lightgray;
+			border-bottom: 1px solid lightgray;
+
 			@media @mobile{
 				height: 33.33%;
 				font-size: 1.8rem;
@@ -306,7 +316,7 @@ p, a {
 	p{
 		padding: 10px 0px;	
 		padding-left: 4px;
-		.border();
+		//.border();
 	}
 
 	//mobile
@@ -324,7 +334,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	background-color: grey;
-	border: 2px solid yellow;
+	//border: 2px solid yellow;
 
 	div{
 		display: flex;
@@ -334,7 +344,7 @@ footer{
 		font-family: @font;
 		font-size: 1.7rem;
 		height: 100%;
-		.border();
+		//.border();
 	}
 }//end footer
 
